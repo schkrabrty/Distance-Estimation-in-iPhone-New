@@ -65,6 +65,7 @@ public class Spawning_Manager : MonoBehaviour
                 animation_Manager = avatar.GetComponent<Animation_Manager>();
                 avatar.transform.rotation = Quaternion.Euler(0.0f, 90.0f, 0.0f);
                 ARPlaneManager.SetTrackablesActive(false);
+                Destroy(ARPlaneManager);
                 spawner_configuration_done = true;
             }
         }
